@@ -208,7 +208,7 @@ def extract_data_multisubject(root_dir: str, n_s_list: list,
             num_s = sub_name(n_s)
 
             base_file_name = f"{root_dir}/derivatives/{num_s}/ses-0{n_b}/{num_s}_ses-0{n_b}"            # noqa
-            events_file_name = f"{base_file_name}_events.dat"
+            events_file_name = f"{root_dir}/derivatives/base_file_name}_events.dat"
             data_tmp_Y = np.load(events_file_name, allow_pickle=True)
             tmp_list_Y.append(data_tmp_Y)
             print("Inner iteration ", n_b)
